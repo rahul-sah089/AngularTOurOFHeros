@@ -21,11 +21,17 @@ export class OperatorEditComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       const id = params['id'];
+      console.log("*******");
+      console.log(id);
+      console.log("*******");
       if (id) {
         this.operatorService.get(id).subscribe((operator: any) => {
+          console.log("*******operators**********");
+          console.log(operator);
+          console.log("*******operators**********");
           if (operator) {
             this.operator = operator;
-            this.operator.href = operator._links.self.href;
+            this.operator.href = operator.id;
             this.giphyService.get(operator.name).subscribe(url => operator.giphyUrl = url);
           } else {
             console.log(`Car with id '${id}' not found, returning to list`);
@@ -40,7 +46,7 @@ export class OperatorEditComponent implements OnInit, OnDestroy {
   }
 
   gotoList() {
-    this.router.navigate(['/car-list']);
+    this.router.navigate(['/operator-list']);
   }
 
   save(form: NgForm) {
@@ -51,6 +57,7 @@ export class OperatorEditComponent implements OnInit, OnDestroy {
 
   remove(href) {
     this.operatorService.remove(href).subscribe(result => {
+      console.log(result);
       this.gotoList();
     }, error => console.error(error));
   }
