@@ -1,0 +1,14 @@
+<mat-card>
+    <mat-card-title>Car List</mat-card-title>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let operator of operators">
+                <img mat-list-avatar src="{{operator.image}}" alt="{{operator.name}}">
+                <h3 mat-line>
+                    <a mat-button [routerLink]="['/operator-edit',operator.id]">{{operator.name}}</a>
+                </h3>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+   <!-- <button mat-fab color="primary" [routerLink]="[/operator-add]">Add</button>-->
+</mat-card>

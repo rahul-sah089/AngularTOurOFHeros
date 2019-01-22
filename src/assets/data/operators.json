@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "airtel",
+      "lowestPrice": "120",
+      "rating": "5",
+      "maxSpeed": "10Mbps",
+      "description": "Airtel India Wiki Page Informations",
+      "contactNo": "+910910910901",
+      "email": "airtel.india@airtel.com",
+      "image": "https://pbs.twimg.com/profile_images/644805995705692160/hByAwFLY_400x400.png",
+      "url": "url"
+    },
+    {
+      "id": 2,
+      "name": "Vodafone",
+      "lowestPrice": "120",
+      "rating": "5",
+      "maxSpeed": "10Mbps",
+      "description": "Airtel India Wiki Page Informations",
+      "contactNo": "+910910910901",
+      "email": "airtel.india@airtel.com",
+      "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201701/vodafonelogo-559_010617085418.jpg",
+      "url": "url"
+    },
+    {
+      "id": 3,
+      "name": "Tosiba",
+      "lowestPrice": "120",
+      "rating": "5",
+      "maxSpeed": "10Mbps",
+      "description": "Airtel India Wiki Page Informations",
+      "contactNo": "+910910910901",
+      "email": "airtel.india@airtel.com",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/TOSHIBA_Logo.png/320px-TOSHIBA_Logo.png",
+      "url": "url"
+    }
+  ]
